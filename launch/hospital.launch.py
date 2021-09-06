@@ -9,7 +9,7 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
     world_file_name = "hospital.world"
-    world = os.path.join(get_package_share_directory('aws_robomaker_hospital_world'), 'worlds', world_file_name)
+    world = os.path.join(get_package_share_directory('aws_hospital_world'), 'worlds', world_file_name)
 
     gazebo_ros = get_package_share_directory('gazebo_ros')
     gazebo_client = launch.actions.IncludeLaunchDescription(

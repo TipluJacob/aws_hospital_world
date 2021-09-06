@@ -41,7 +41,7 @@ We also reference the following models from https://app.ignitionrobotics.org/fue
     from launch.actions import IncludeLaunchDescription
     from launch.launch_description_sources import PythonLaunchDescriptionSource
     def generate_launch_description():
-        hospital_pkg_dir = get_package_share_directory('aws_robomaker_hospital_world')
+        hospital_pkg_dir = get_package_share_directory('aws_hospital_world')
         hospital_launch_path = os.path.join(warehouse_pkg_dir, 'launch')
         hospital_world_cmd = IncludeLaunchDescription(
             PythonLaunchDescriptionSource([hospital_launch_path, '/hospital.launch.py'])
@@ -67,7 +67,7 @@ colcon build
 
 # run in ROS2
 source install/setup.sh
-ros2 launch aws_robomaker_hospital_world view_hospital.launch.py
+ros2 launch aws_hospital_world view_hospital.launch.py
 ```
 
 # Building

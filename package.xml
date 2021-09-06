@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>aws_robomaker_hospital_world</name>
+  <name>aws_hospital_world</name>
   <version>1.0.0</version>
   <description>
     AWS RoboMaker package for a warehouse world to use in manufacturing and logistics robot applications.

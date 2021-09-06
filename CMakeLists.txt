@@ -2,7 +2,7 @@
 # Set minimum required version of cmake, project name and compile options
 ################################################################################
 cmake_minimum_required(VERSION 3.5)
-project(aws_robomaker_hospital_world)
+project(aws_hospital_world)
 
 ################################################################################
 # Find ament packages and libraries for ament and system dependencies
@@ -17,7 +17,11 @@ exec_program("python3 ${CMAKE_CURRENT_SOURCE_DIR}/fuel_utility.py download -m XR
 # Install
 ################################################################################
 
-install(DIRECTORY launch models fuel_models worlds
+install(DIRECTORY
+	launch
+	models
+	fuel_models
+	worlds
 	DESTINATION share/${PROJECT_NAME}
 )
 
